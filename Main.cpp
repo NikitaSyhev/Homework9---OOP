@@ -17,10 +17,10 @@ class MyClass
 {
 public:
 	//1. ƒва способа создать конструктор по умолчанию
-	MyClass() : _name("Noname") {}
-//	MyClass() : this->_name("Noname");
+	MyClass() : _name("Noname"){}
+//	MyClass() = default;
 	//2. —пособ удалить конструктор по умолчанию
-	//MyClass() = delete; - закомментировал, чтобы не удал€ть
+	//MyClass() = delete[]; - закомментировал, чтобы не удал€ть
 //	3. ќбъ€вление и определение дл€ operator[] дл€ доступа к элементам пол€
 		//std::string по индексу
 
